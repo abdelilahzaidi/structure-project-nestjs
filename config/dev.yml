@@ -1,0 +1,17 @@
+server:
+  host: 'localhost'
+  port: 3000
+
+database:
+  type: 'postgres'
+  host: 'localhost'
+  port: 5432
+  database: 'postgres'
+  username: 'postgres'
+  password: 'root'
+  logging: true
+  logger: "simple-console"
+
+jwt:
+  secret: 'c18c8a5d8225310bb1a8cd1d0417023e78028d53a1b36e86f5604ac4cf20bd3e'
+  expiresIn: '8h'

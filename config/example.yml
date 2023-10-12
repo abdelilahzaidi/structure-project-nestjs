@@ -1,0 +1,18 @@
+server:
+  host:
+  port:
+
+database:
+  type:
+  host:
+  port:
+  database:
+  username:
+  user:
+  password:
+  logging: boolean
+  logger: "'simple-console' | 'advanced-console' | 'debug' | 'file'"
+
+jwt:
+  secret: 'executer npm run generate:key'
+  expiresIn:

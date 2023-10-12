@@ -1,0 +1,38 @@
+POST http://localhost:3000/signIn
+Content-Type: application/json
+
+{
+  "email": "flavian.ovyn@test.test",
+  "password": "Test1234="
+}
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "email": "flavian.ovyn@test.test"
+}
+
+###
+POST http://localhost:3000/seance
+Content-Type: application/json
+
+{
+  "coursId": 1,
+  "date": "2023-10-09",
+  "startAt": "10:00:00.000",
+  "endAt": "11:00:00.000"
+}
+
+###
+PATCH http://localhost:3000/seance/1/participants
+Content-Type: application/json
+
+{
+  "userIds": [1]
+}
+
+
+###
+GET http://localhost:3001/user
